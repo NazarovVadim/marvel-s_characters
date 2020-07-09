@@ -35,8 +35,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         let movies;
                         if(item.movies){
                             let moviesArr = item.movies;
-                            console.log(moviesArr);
-                            movies = moviesArr.join(', ');
+                            movies = moviesArr.join(',\n    ');
+                            console.log(movies);
+                            
                         } else{
                             movies = `Was now in the movies`;
                         }
@@ -54,7 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <span>Species: ${species}</span>
                                     <span>Gender: ${item.gender}</span>
                                     <span>Citizenship: ${citizenship}</span>
-                                    <span>Movies: ${movies}</span>
+                                    <pre><strong class="strong">Movies:</strong>
+    ${movies}</pre>
                                     <span>Actors: ${item.actors}</span>
                                 </div>
                         `);
