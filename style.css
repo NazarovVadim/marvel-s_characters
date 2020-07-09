@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    min-height: 100vh;
+}
+body{
+    background: linear-gradient(#e66465, #9198e5);
+    font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 4px;
+}
+::-webkit-scrollbar-track{
+    background: #f1f1f100;
+    
+}
+::-webkit-scrollbar-thumb{
+    background: #3b3b3b;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #363636;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    font-weight: 700;
+    color: #575da5;
+}
+.header span{
+    border-bottom: 1px solid #575da5;
+}
+.container{
+    max-width: 1200px;
+    margin: 70px auto 0;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*cards*/
+
+.hero{
+    background: linear-gradient(#a3aaff, #696ea4);
+    border: 1px solid #777cb8;
+    color: #181a2e;
+}
+
+.fiend{
+    background: linear-gradient(#ff7b7b, #d87a7a);
+    border: 1px solid #c96161;
+    color:#1b0000;
+}
+
+.card{
+    margin-top: 40px;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 27%;
+    
+}
+
+
+.photo img{
+    max-height: 350px;
+}
+
+.info{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+}
+
+.name{
+    font-size: 26px !important;
+    margin: 0 auto;
+    font-weight: 700 !important;
+}
+.life{
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 14px !important;
+}
+
+.info span{
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
