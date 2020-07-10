@@ -5,7 +5,7 @@ html, body{
     min-height: 100vh;
 }
 body{
-    background: linear-gradient(#e66465, #9198e5);
+    background: linear-gradient(#ec1d25, #9198e5);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -30,13 +30,14 @@ body{
     justify-content: center;
     font-size: 3em;
     font-weight: 700;
-    color: #575da5;
+    user-select: none;
+    color: #ffffff;
 }
 .header span{
     border-bottom: 1px solid #575da5;
 }
 .container{
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 70px auto 0;
     padding: 10px;
     display: flex;
@@ -44,13 +45,46 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.filter{
+    max-width: 1440px;
+    margin: 70px auto 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*filter*/
+label{
+    margin-right: 10px;
+    font-size: 3em;
+    font-weight: 700;
+    user-select: none;
+    color: #ffffff;
+}
+option{
+    margin-right: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin-bottom: 1px solid #750f12;
+}
+
+select{
+    height: 2em;
+    background: #ec1d25;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
 
 /*cards*/
 
 .hero{
-    background: linear-gradient(#a3aaff, #696ea4);
-    border: 1px solid #777cb8;
-    color: #181a2e;
+    background: linear-gradient(#cbcffa72, #b4b8e272);
+    border: 2px solid #d0d1e0;
+    color: #ffffff;
 }
 
 .fiend{
@@ -67,7 +101,7 @@ body{
     align-items: center;
     flex-direction: column;
     flex-basis: 27%;
-    
+    max-width: 400px;
 }
 
 
