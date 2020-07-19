@@ -111,12 +111,15 @@ select{
 }
 
 .card:hover{
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 
 .photo img{
     max-height: 350px;
+}
+.photo img:hover{
+    cursor: pointer;
 }
 
 .info{
@@ -177,7 +180,7 @@ select{
     max-width: 450px;
 }
 body{
-    background: rgb(10, 10, 14);
+    /* background: rgb(10, 10, 14); */
 }
 
 /*btnprev*/
@@ -201,6 +204,14 @@ body{
 .button__prev:hover{
     cursor: pointer;
     background: rgba(49, 49, 49, 0.442);
+}
+.characters{
+    color: #fff;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
 }
 
 @media(max-width: 768px){

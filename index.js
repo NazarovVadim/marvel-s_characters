@@ -149,6 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
             film.insertAdjacentHTML('afterbegin', `
                 <div class="film__title">${select.value}</div>
                 <div class="trailer">${frameTrailer}</div>
+                <div class="characters">Characters of&nbsp;<strong>${select.value}</strong> :<div>
             `);
             container.append(film);
 
@@ -203,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }
-
+        
     }
 
     const chooseFilm = () => {
@@ -225,6 +226,12 @@ document.addEventListener('DOMContentLoaded', () => {
         getData();
     }
 
+    document.addEventListener('click', event => {
+        const target = event.target;
+        if(target.tagName === 'IMG'){
+            console.log(target.src);
+        }
+    });
     select.addEventListener('change', chooseFilm);
     buttonPrev.addEventListener('click', () => {
         container.innerHTML = ``;
